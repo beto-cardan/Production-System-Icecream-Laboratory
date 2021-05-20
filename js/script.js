@@ -26,3 +26,13 @@ function calcular(){
         res.style.fontSize= '12pt'
         res.style.fontFamily=('arial');
 }
+
+function toggleMenu() {
+    let toggle = document.querySelector('.toggle');
+    let container = document.querySelector('.container');
+    let icon = document.querySelector('.icon-bar');
+    toggle.classList.toggle('active');
+    container.classList.toggle('active');
+    icon.classList.toggle('active');
+
+}
