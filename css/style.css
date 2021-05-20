@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@200&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: 'KoHo', sans-serif;
+}
+.text{
+    font-family: 'KoHo', sans-serif;
+    padding: 5px;
+    background-color: #a9e971;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bolder;
+    box-shadow: 2px 2pxrgba(85, 85, 85, 0.198);
+}
+
+.icon-bar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+    text-align: center;
+    display: block;
+}
+
+.icon-bar a {
+    float: left;
+    text-align: center;
+    width: 16%;
+    color: #fff;
+    font-size: 36px;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+}
+
+.icon-bar .active {
+    background-color:#37deffc9 ;
+}
+
+.icon-bar a:hover {
+    background-color:#a9e971;
+}
+
+.container {
+    padding: 25px;
+}
+
+.toggle {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background:rgb(85, 85, 85);
+    color: #fff;
+    font-family:Arial, Helvetica, sans-serif; 
+    padding: 0.25rem;     
+}
+
+.box {
+    width: auto;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #0f0f0f00;
+    text-align: center;
+}
+
+.box input[type="number"],
+.box input[ type="number"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #37deff;
+    padding: 14px 10px;
+    width: 100px;
+    outline: none;
+    color: rgb(17, 16, 16);
+    border-radius: 24px;
+    transition: 0.25s;
+
+}
+
+.box input[type="number"]:focus,
+.box input[type="number"]:focus {
+    width: 180px;
+    border-color: #a9e971;
+
+}
+
+.box input[type="button"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #88eefc;
+    padding: 14px 40px;
+    outline: none;
+    color: rgb(36, 30, 30);
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+
+}
+
+.box input[type="button"]:hover {
+    background: #fdf495;
+}
+
+@media (max-width:570px) {
+    body .container {
+        display: block;
+    }
+
+    .icon-bar {
+        width: 100px;
+        background-color: #555;
+    }
+
+
+    .icon-bar a {
+        display: block;
+        font-size: 26px;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        height: 30px;
+        width: 60px;
+        transition: all 0.3s ease;
+
+    }
+    .container {
+        padding: 20px 1px;
+    }
+
+    .toggle {
+        float: right;
+        position: fixed;
+        right: 0;
+        line-height: 50px;
+        font-size: 44px;
+        cursor: pointer;
+        display: block;
+        padding: 2px 80px;
+    }
+
+    .toggle.active {
+        transform: rotate(360deg);
+        transition: 0.5s;
+        z-index: 10000;
+        right: 0;
+        left: initial;
+        position: fixed;
+        background-color: #a9e971b0;
+        padding: 0.1rem;
+        margin: 5px;
+    }
+
+    .container .icon-bar.active {
+        margin-left: -250px;
+        transition: 0.5s;
+    }
+    .box {
+        
+        top: 50%;
+        left: 50%;  
+    }
+    h1{
+        font-size: 16px;
+        text-align: center;
+    }
+    footer{
+        display: none;
+    }
+    .text{
+        
+        padding: 12px;
+        color: #fff;
+        font-size: 0.75rem;
+        box-shadow: 2px 2pxrgba(85, 85, 85, 0.198);
+        text-align: center;
+        width: auto;
+    }   
+
+}
+@media (max-width:370px){
+    .container .icon-bar{
+        display: none;
+    }
+
+}

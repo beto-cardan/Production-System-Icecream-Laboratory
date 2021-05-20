@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelato</title>
+    <link rel="stylesheet" href="css/bootstrap_icon/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="media/favicon-16x16.png" type="image/x-icon">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="icon-bar">
+            <div class="toggle" onclick="toggleMenu()">
+                <i class="bi bi-list"></i>
+            </div>
+            <a href="#" class="active"><i class="bi bi-house-fill"></i></a>
+            <a href="#"><i class="bi bi-person-badge-fill"></i></a>
+            <a href="#"><i class="bi bi-graph-up"></i></a>
+            <a href="#"></i><i class="bi bi-trophy"></i></a>
+            <a href="#"><i class="bi bi-envelope"></i></a>
+            <a href="#"><i class="bi bi-box-arrow-right"></i></a>
+
+        </div>
+
+        <main>
+            <section>
+                <form class="box" action="index.html" method="post">
+                    <h1>Calcolando la Produttivita'</h1>
+                    <div>
+                        <p><input type="number" name="numb1" id="txtn1" placeholder="Kg prodotti"></p>&#x1F367
+                        <p><input type="number" name="numb2" id="txtn2" placeholder="Ore lavorate"></p>
+                        <input type="button" value="Go!" onclick="calcular()">
+                        <div id="res"></div>
+                    </div>
+                </form>
+            </section>
+
+        </main>
+        <footer>
+            <p>&copy;Laboratorio di Milano</p>
+        </footer>
+
+
+        <script>
+            function toggleMenu() {
+                let toggle = document.querySelector('.toggle');
+                let container = document.querySelector('.container');
+                let icon = document.querySelector('.icon-bar');
+                toggle.classList.toggle('active');
+                container.classList.toggle('active');
+                icon.classList.toggle('active');
+
+            }
+        </script>
+        <script src="script.js"></script>
+
+
+</body>
+
+</html>
