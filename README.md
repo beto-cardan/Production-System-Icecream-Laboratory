@@ -5,8 +5,7 @@
  So:*
  `if  Kg/h > 15 kg` 
  Great job!
- `Else`
- `if kg/h < 15 kg `
+ `Else if kg/h < 15 kg `
  Something is not working.
 
 [Click here end test it !](https://beto-cardan.github.io/Production-System-Icecream-Laboratory/)
