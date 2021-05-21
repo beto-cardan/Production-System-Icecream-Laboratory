@@ -175,9 +175,9 @@ footer {
         transition: 0.5s;
     }
     .box {
+        margin: 20%;
         display: block;
-        top: 60%;
-        left: 60%;  
+
     }
     h1{
         font-size: 12px;
