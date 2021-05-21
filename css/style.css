@@ -174,12 +174,8 @@ footer {
         margin-left: -250px;
         transition: 0.5s;
     }
-    .box {
-        margin: 20%;
-        display: block;
-
-    }
     h1{
+        padding: 20px;
         font-size: 12px;
         text-align: center;
     }
@@ -194,6 +190,21 @@ footer {
         box-shadow: 2px 2pxrgba(85, 85, 85, 0.198);
         text-align: center;
         width: auto;
-    }   
+    }  
+    .box {
+        margin: 2px;
+        width: 25%;
+        padding: 20px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+    }
+    
+    .box input[type="number"]:focus,
+    .box input[type="number"]:focus {
+        width: 80px;
+        border-color: #a9e971;
+
+}
 
 }
