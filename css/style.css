@@ -138,7 +138,7 @@ main,section .box{
     background: #fdf495;
 }
 
-@media(max-width:768px){
+@media(max-width:500px){
     .icon-bar{
         left: 0%;
         width: 100%;
@@ -146,9 +146,9 @@ main,section .box{
     main,section{
         width: auto;
         padding: 20px;
-        position: fixed;
-        margin-top: 20%;
+        position: a;
     }
+    
     .text{
         width: 35%;
         margin: 330px 300px;
@@ -161,7 +161,8 @@ main,section .box{
 }
 
 
-@media (max-width:986px) {
+@media (max-width:998px) {
+    
     .icon-bar {
         width: 100px;
         background-color: #555;
@@ -215,12 +216,12 @@ main,section .box{
     main,section{
         width: 50%;
         position: fixed; 
-        margin-top: 30%; 
+        margin-top: 15%; 
     }
     
     #res{
         width: auto;
-        margin-top: -6%;
+        margin-top: -4%;
         text-align: left; 
         left: 15%;  
     }
