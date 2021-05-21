@@ -175,6 +175,7 @@ footer {
         transition: 0.5s;
     }
     .box {
+        display: block;
         top: 60%;
         left: 60%;  
     }
