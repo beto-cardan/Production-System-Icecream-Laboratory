@@ -121,7 +121,7 @@ footer {
     background: #fdf495;
 }
 
-@media (max-width:570px) {
+@media (max-width:668px) {
     body .container {
         display: block;
     }
