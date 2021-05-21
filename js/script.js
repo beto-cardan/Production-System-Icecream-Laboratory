@@ -13,11 +13,11 @@ function calcular(){
     }
     if(pdt<15){
 
-        res.innerHTML=`<div class'text'> <p class='text'><strong>La tua produttivita' è molto bassa! solanto ${pdt.toFixed(3)} kg/ora.<br> Attenzione, Rivedere manuale !</strong>&#x1F611 &#x1F4E2</p></div>`
+        res.innerHTML=`<div class='text'> <h2><strong> La tua produttivita' è molto bassa! solanto ${pdt.toFixed(3)} kg/ora.<br> Attenzione, Rivedere manuale !</strong>&#x1F611 &#x1F4E2</h2></div>`
         
     }else{
          
-        res.innerHTML = `<div class='text'> <p><strong>Hai lavorato ${n2} ore e prodotto ${n1} kg di gelato. </p> <p>La tua produttivita' è: ${pdt.toFixed(3)} kg/ora!</p> <p>Ottimo Lavoro!</strong>&#x1F60D &#x1F44F</p> </div>`
+        res.innerHTML = `<div class='text'> <h2><strong> Hai lavorato ${n2} ore e prodotto ${n1} kg di gelato.<br>La tua produttivita' è: ${pdt.toFixed(3)} kg/ora! <br>Ottimo Lavoro!</strong>&#x1F60D &#x1F44F</h2></div>`
 
     }
 

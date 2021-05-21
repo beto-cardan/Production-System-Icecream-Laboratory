@@ -1,23 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=KoHo:wght@200&display=swap');
 
-body {
+*{
     margin: 0;
     padding: 0;
+   
+}
+body{
+    overflow-x: hidden;
+}
+.container{
+    position: relative;
+    width: 100%;
+    top: 0;
 }
 
-h1{
+h1,h2,p{
     font-family: 'KoHo', sans-serif;
+    font-weight: bold;
 }
+
 .text{
+    position: absolute;
     font-family: 'KoHo', sans-serif;
-    padding: 5px;
-    background-color: #a9e971;
+    width: 35%;
+    margin: 340px 410px;
+    padding: 1px;
+    font-size: 12px;
+    text-align: center;
+    background-color:#ffffff8f ;
     border-radius: 20px;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: bolder;
-    box-shadow: 2px 2pxrgba(85, 85, 85, 0.198);
+    color: #555;
+    box-shadow: 7px 8px rgba(85, 85, 85, 0.15);
 }
+
+
 
 .icon-bar {
     width: 100%;
@@ -45,9 +61,6 @@ h1{
     background-color:#a9e971;
 }
 
-.container {
-    padding: 25px;
-}
 
 .toggle {
     display: none;
@@ -66,11 +79,11 @@ footer {
     padding: 0.25rem;     
 }
 
-.box {
+main,section{
     width: auto;
     padding: 20px;
     position: fixed;
-    top: 50%;
+    margin-top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: #0f0f0f00;
@@ -121,10 +134,30 @@ footer {
     background: #fdf495;
 }
 
-@media (max-width:668px) {
-    body .container {
-        display: block;
+@media(max-width:768px){
+    .icon-bar{
+        left: 0%;
+        width: 100%;
     }
+    main,section{
+        width: auto;
+        padding: 20px;
+        position: fixed;
+        margin-top: 20%;
+    }
+    .text{
+        width: 35%;
+        margin: 330px 300px;
+        padding:0.25rem;
+        text-align: center;
+        font-size: 10px;
+        
+    }
+
+}
+
+
+@media (max-width:480px) {
 
     .icon-bar {
         width: 100px;
@@ -138,7 +171,7 @@ footer {
         color: #fff;
         text-align: center;
         padding: 20px;
-        height: 30px;
+        height: 20px;
         width: 60px;
         transition: all 0.3s ease;
 
@@ -174,31 +207,25 @@ footer {
         margin-left: -250px;
         transition: 0.5s;
     }
-    h1{
-        padding: 20px;
-        font-size: 12px;
-        text-align: center;
-    }
     footer{
         display: none;
     }
-    .text{
-        
-        padding: 12px;
-        color: #fff;
-        font-size: 0.75rem;
-        box-shadow: 2px 2pxrgba(85, 85, 85, 0.198);
-        text-align: center;
+    main,section{
         width: auto;
-    }  
-    .box {
-        margin: 2px;
-        width: 25%;
         padding: 20px;
         position: fixed;
-        top: 50%;
-        left: 50%;
+        margin-top: -35%;
     }
+    .text{
+        width: auto;
+        margin:400px 25px;
+        padding:0.25rem;
+        text-align: center;
+        font-size: 10px;
+        margin-top: 10px;
+        
+    }
+
     
     .box input[type="number"]:focus,
     .box input[type="number"]:focus {
@@ -208,3 +235,4 @@ footer {
 }
 
 }
+
