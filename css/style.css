@@ -175,12 +175,11 @@ footer {
         transition: 0.5s;
     }
     .box {
-        
-        top: 50%;
-        left: 50%;  
+        top: 60%;
+        left: 60%;  
     }
     h1{
-        font-size: 16px;
+        font-size: 12px;
         text-align: center;
     }
     footer{
@@ -195,11 +194,5 @@ footer {
         text-align: center;
         width: auto;
     }   
-
-}
-@media (max-width:400px){
-    .container .icon-bar{
-        display: none;
-    }
 
 }
