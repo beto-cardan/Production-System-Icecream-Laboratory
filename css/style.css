@@ -12,6 +12,7 @@ body{
     position: relative;
     width: 100%;
     top: 0;
+    
 }
 
 h1,h2,p{
@@ -19,12 +20,12 @@ h1,h2,p{
     font-weight: bold;
 }
 
-.text{
-    position: absolute;
+#res{
+    position: fixed;
     font-family: 'KoHo', sans-serif;
-    width: 35%;
-    margin: 340px 410px;
-    padding: 1px;
+    width: auto;
+    top: 70%;
+    left: 30%;
     font-size: 12px;
     text-align: center;
     background-color:#ffffff8f ;
@@ -41,6 +42,8 @@ h1,h2,p{
     overflow: auto;
     text-align: center;
     display: block;
+    position: fixed;
+    top: 0;
 }
 
 .icon-bar a {
@@ -83,7 +86,7 @@ main,section{
     width: auto;
     padding: 20px;
     position: fixed;
-    margin-top: 15%;
+    margin-top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: #0f0f0f00;
@@ -157,8 +160,7 @@ main,section{
 }
 
 
-@media (max-width:480px) {
-
+@media (max-width:768px) {
     .icon-bar {
         width: 100px;
         background-color: #555;
@@ -176,9 +178,7 @@ main,section{
         transition: all 0.3s ease;
 
     }
-    .container {
-        padding: 20px 1px;
-    }
+   
 
     .toggle {
         float: right;
@@ -208,21 +208,21 @@ main,section{
         transition: 0.5s;
     }
     footer{
-        display: none;
+        display: block;
+        width: 100%;
     }
     main,section{
         width: auto;
         padding: 20px;
         position: fixed;
-        margin-top: -35%;
+        margin-top: 50%;
     }
-    .text{
+    #res{
         width: auto;
-        margin:400px 25px;
-        padding:0.25rem;
-        text-align: center;
+        left: 0;
+        margin-top: -30px;
         font-size: 10px;
-        margin-top: 10px;
+        padding: 0.25rem;
         
     }
 
