@@ -2,7 +2,6 @@
 
 body{
     margin: 0;
-    font-family: var(--bs-font-sans-serif);
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -27,14 +26,14 @@ h1,h2,p{
     position: fixed;
     font-family: 'KoHo', sans-serif;
     width: auto;
-    top: 70%;
+    top: 60%;
     left: 30%;
     font-size: 12px;
     text-align: center;
-    background-color:#ffffff8f ;
+    background-color:#ffffff07 ;
     border-radius: 20px;
     color: #555;
-    box-shadow: 7px 8px rgba(85, 85, 85, 0.15);
+    box-shadow: 7px 8px rgba(85, 85, 85, 0.055);
 }
 
 
@@ -95,11 +94,11 @@ footer {
     background: #0f0f0f00;
     text-align: center;
     display: block;*/
-    margin: 4%;
+    margin: 5%;
     align-items: center;
     display: flex;
     flex-direction: row;
-    height: calc(100vh - 56px);
+    height: calc(50vh - 56px);
     min-width: fit-content;
     position: relative;
     z-index: 1;
@@ -111,10 +110,10 @@ footer {
     border: 0;
     background: none;
     display: block;
-    margin: 20px auto;
+    margin: 0px auto;
     text-align: center;
     border: 2px solid #37deff;
-    padding: 14px 10px;
+    padding: 10px 10px;
     width: 100px;
     outline: none;
     color: rgb(17, 16, 16);
@@ -155,19 +154,18 @@ footer {
         left: 0%;
         width: 100%;
     }
-    
-    .text{
-        width: 35%;
-        margin: 50% ;
-        padding:0.25rem;
-        text-align: center;
-        font-size: 10px;
-        
-    }
     .form{
+        height: calc(80vh - 50px);
+    }
+    #res{
         width: auto;
-        bottom: 50%;
-        grid-column: auto;
+    }
+    
+    
+   
+    h2{
+        font-size: 14px;
+        position: fixed;
     }
 
 }
@@ -176,32 +174,44 @@ footer {
 @media (max-width:998px) {
     
     .icon-bar {
-        width: 100px;
+        width: 50px;
         background-color: #555;
     }
 
 
     .icon-bar a {
         display: block;
-        font-size: 26px;
+        font-size: 13px;
         color: #fff;
         text-align: center;
-        padding: 20px;
+        padding: 10px;
         height: 20px;
-        width: 60px;
+        width: 30px;
         transition: all 0.3s ease;
 
+    }
+    
+    .form{
+        flex-direction: column;
+    }
+    #res{
+        top: 88%;
+        left: 50%;
+        display: flex;
+        
+    }
+
+    h2{
+        font-size: 16px;
     }
    
 
     .toggle {
-        float: right;
-        position: relative;
         display: flex;
-        padding: 2px 80px;
         font-size: 20px;
         color: #fff;
         cursor: pointer;
+        padding: 0.75rem;
     }
 
     .toggle.active {
@@ -211,8 +221,8 @@ footer {
         right: 0;
         left: initial;
         position: fixed;
-        background-color: #a9e971b0;
-        padding: 0.1rem;
+        background-color: #00000059;
+        padding: 0rem;
         margin: 5px;
     }
 
@@ -227,7 +237,7 @@ footer {
     
     #res{
         width: auto;
-        margin-top: -4%;
+        margin-top: -20%;
         text-align: left; 
         left: 15%;  
     }
