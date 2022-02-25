@@ -8,7 +8,7 @@ body{
 .container{
     position: fixed;
     width: 100%;
-    top: 10px;   
+    top: 0;   
 }
 
 h1,h2,p{
@@ -80,7 +80,7 @@ footer {
 }
 
 .form{
-    margin: 15%;
+    margin: 5%;
     align-items: center;
     display: flex;
     flex-direction: row;
