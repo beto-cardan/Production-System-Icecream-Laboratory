@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=KoHo:wght@200&display=swap');
 
-body{
+*
+{
     margin: 0;
     padding: 0;
-    background-color: #fff;
 }
+
 .container{
     position: fixed;
     width: 100%;
-    top: 0;   
+    top:0;   
+}
+section{
+    padding: 50px;
 }
 
 h1,h2,p{
