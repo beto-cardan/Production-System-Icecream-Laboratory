@@ -12,7 +12,13 @@
     top:0;   
 }
 section{
-    padding: 50px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 400px;
+    height: 400px;
 }
 
 h1,h2,p{
@@ -84,14 +90,11 @@ footer {
 }
 
 .form{
-    margin: 5%;
+    margin: 20%;
     align-items: center;
     display: flex;
-    flex-direction: row;
-    height: calc(50vh - 56px);
-    min-width: fit-content;
+    flex-direction: column;
     position: relative;
-    z-index: 1;
 
 }
 
@@ -168,7 +171,6 @@ footer {
         background-color: #555;
 
     }
-
 
     .icon-bar a {
         display: block;
